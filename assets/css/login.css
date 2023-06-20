@@ -1,0 +1,74 @@
+@import url(main.css);
+
+.main-container{
+    height: 80vh;
+    margin: 0 auto;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+input:focus {
+    outline: none;
+}
+
+.input-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0);  
+}
+
+input[type='text'], input[type='password']{
+    height: 35px;
+    width: 300px;
+    background-color: #1B1929;
+    border: none;
+    padding: 5px;
+    border-radius: 0 10px 10px 0;
+    color: white;
+}
+
+.input-box img{
+    height: 25px;
+    background-color: #1B1929;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+input[type='submit']{
+    margin-top: 2vh;
+    font-size: 1.3rem;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1B1929;
+    color: white;
+    cursor: pointer;
+    text-align: end;
+    padding-right: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0);  
+}
+
+input[type='submit']:hover{
+    color: darkorange;
+}
+
+form p{
+    font-size: 0.9rem;
+    text-align: end;
+}
+
+form a{
+    color: white;
+}
