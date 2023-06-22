@@ -1,20 +1,20 @@
 <?php
 class User {
     private $id;
-    private $login;
+    private $username;
     private $password;
     private $logState;
 
-    public function __construct($login, $password, $id = 0, $logState = false) {
-        $this->login = $login;
+    public function __construct($username, $password, $id = 0, $logState = false) {
+        $this->username = $username;
         $this->password = $password;
         $this->id = $id;
         $this->logState = $logState;
     }
     
     // SETTER
-    public function setLogin($newLogin) {
-        $this->login = $newLogin;
+    public function setUsername($newUsername) {
+        $this->username = $newUsername;
     }
     
     public function setPassword($newPassword) {
@@ -26,8 +26,8 @@ class User {
     }
     
     //GETTER
-    public function getLogin() {
-        return $this->login;
+    public function getUsername() {
+        return $this->username;
     }
     
     public function getPassword() {
@@ -53,22 +53,10 @@ class User {
     public function getInfo() {
         $tab = [];
         $tab['id'] = $this->id;
-        $tab['login'] = $this->login;
+        $tab['username'] = $this->username;
         $tab['password'] = $this->password;
         $tab['logState'] = $this->logState;
         return $tab;
-    }
-
-    public function register($conn) {
-        $sqlQuery = "INSERT INTO user (login, password) VALUES (:login, :password)";
-        $stmt = $conn->prepare($sqlQuery);
-        $stmt->bindParam(':login', $this->login);
-        $stmt->bindParam(':password', $this->password);
-
-        if ($stmt->execute()) {
-            header("Location: connexion.php");
-            exit();
-        }
     }
 }
 ?>

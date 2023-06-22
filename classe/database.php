@@ -9,7 +9,6 @@ class Database {
     public function __construct() {
         $this->connect();
     }
-
     private function connect() {
         // 2 syntaxes :
         // $this->pdo = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->dbname . ";port=3308", $this->username, $this->password);

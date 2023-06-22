@@ -25,10 +25,18 @@ session_start();
 
         <section class="main-container">
 
-            <?php echo generateLogState(); ?>
+            <?php echo generateLogStateIndex(); ?>
 
             <h1>Bienvenue sur votre gestionnaire de fichier</h1>
             <p>Inscrivez-vous, connectez-vous, téléchargez vos fichiers et gérez-les comme vous le souhaitez.</p>
+
+            <div class="buttons">
+                <div onclick="location.href='pages/register.php'" class="button">Inscription</div>
+
+                <div onclick="location.href='pages/file_manager.php'" class="button">Gestion des fichiers</div>
+
+                <div onclick="location.href='pages/login.php'" class="button">Connexion</div>
+            </div>
         </section>
 
         <?php echo generateFooter(); ?>
