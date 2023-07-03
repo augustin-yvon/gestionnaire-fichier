@@ -31,11 +31,11 @@ session_start();
             <p>Inscrivez-vous, connectez-vous, téléchargez vos fichiers et gérez-les comme vous le souhaitez.</p>
 
             <div class="buttons">
-                <div onclick="location.href='pages/register.php'" class="button">Inscription</div>
+                <a href="pages/register.php" class="button">Inscription</a>
 
-                <div onclick="location.href='pages/file_manager.php'" class="button">Gestion des fichiers</div>
-
-                <div onclick="location.href='pages/login.php'" class="button">Connexion</div>
+                <a href="pages/file_manager.php" class="button">Gestion des fichiers</a>
+                
+                <a href="pages/login.php" class="button">Connexion</a>
             </div>
         </section>
 

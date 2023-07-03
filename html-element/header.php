@@ -3,21 +3,21 @@ function generateHeader() {
     $header = '<header>';
     $header .= '<div class="header-content">';
 
-    $header .= '<img id="original-color-g" class="original-color" onclick="location.href=\'file_manager.php\'" src="../assets/img/gestionnaire-fichier.png" alt="gestionnaire de fichier" title="Gestionnaire de fichier">';
-    $header .= '<img id="hover-color-g" class="hover-color" onclick="location.href=\'file_manager.php\'" src="../assets/img/gestionnaire-fichier-orange.png" alt="gestionnaire de fichier" title="Gestionnaire de fichier">';
+    $header .= '<a href="file_manager.php" class="original-color"><img  src="../assets/img/gestionnaire-fichier.png" alt="gestionnaire de fichier" title="Gestionnaire de fichier"></a>';
+    $header .= '<a href="file_manager.php" class="hover-color"><img  src="../assets/img/gestionnaire-fichier-orange.png" alt="gestionnaire de fichier" title="Gestionnaire de fichier"></a>';
     
-    $header .= '<img id="original-color-i" class="original-color" onclick="location.href=\'register.php\'" src="../assets/img/inscription.png" alt="inscription" title="Inscription">';
-    $header .= '<img id="hover-color-i" class="hover-color" onclick="location.href=\'register.php\'" src="../assets/img/inscription-orange.png" alt="inscription" title="Inscription">';
+    $header .= '<a href="register.php" class="original-color"><img  src="../assets/img/inscription.png" alt="gestionnaire de fichier" title="Gestionnaire de fichier"></a>';
+    $header .= '<a href="register.php" class="hover-color"><img  src="../assets/img/inscription-orange.png" alt="gestionnaire de fichier" title="Gestionnaire de fichier"></a>';
     
-    $header .= '<img id="original-color-i" class="original-color" onclick="location.href=\'../index.php\'" src="../assets/img/accueil.png" alt="inscription" title="Inscription">';
-    $header .= '<img id="hover-color-i" class="hover-color" onclick="location.href=\'../index.php\'" src="../assets/img/accueil-orange.png" alt="inscription" title="Inscription">';
+    $header .= '<a href="../index.php" class="original-color"><img  src="../assets/img/accueil.png" alt="gestionnaire de fichier" title="Gestionnaire de fichier"></a>';
+    $header .= '<a href="../index.php" class="hover-color"><img  src="../assets/img/accueil-orange.png" alt="gestionnaire de fichier" title="Gestionnaire de fichier"></a>';
     
-    $header .= '<img id="original-color-c" class="original-color" onclick="location.href=\'login.php\'" src="../assets/img/connexion.png" alt="connexion" title="Connexion">';
-    $header .= '<img id="hover-color-c" class="hover-color" onclick="location.href=\'login.php\'" src="../assets/img/connexion-orange.png" alt="connexion" title="Connexion">';
-    
-    $header .= '<img id="original-color-p" class="original-color" onclick="location.href=\'profile.php\'" src="../assets/img/profil.png" alt="profil" title="Profil">';
-    $header .= '<img id="hover-color-p" class="hover-color" onclick="location.href=\'profile.php\'" src="../assets/img/profil-orange.png" alt="profil" title="Profil">';
-    
+    $header .= '<a href="login.php" class="original-color"><img  src="../assets/img/connexion.png" alt="gestionnaire de fichier" title="Gestionnaire de fichier"></a>';
+    $header .= '<a href="login.php" class="hover-color"><img  src="../assets/img/connexion-orange.png" alt="gestionnaire de fichier" title="Gestionnaire de fichier"></a>';
+   
+    $header .= '<a href="profile.php" class="original-color"><img  src="../assets/img/profil.png" alt="gestionnaire de fichier" title="Gestionnaire de fichier"></a>';
+    $header .= '<a href="profile.php" class="hover-color"><img  src="../assets/img/profil-orange.png" alt="gestionnaire de fichier" title="Gestionnaire de fichier"></a>';
+
     $header .= '</div>';
     $header .= '<script src="../assets/js/main.js"></script>';
     $header .= '</header>';
@@ -28,24 +28,24 @@ function generateHeader() {
 function generateHeaderIndex() {
     $header = '<header>';
     $header .= '<div class="header-content">';
-    
-    $header .= '<img id="original-color-g" class="original-color" onclick="location.href=\'pages/file_manager.php\'" src="assets/img/gestionnaire-fichier.png" alt="gestionnaire de fichier" title="Gestionnaire de fichier">';
-    $header .= '<img id="hover-color-g" class="hover-color" onclick="location.href=\'pages/file_manager.php\'" src="assets/img/gestionnaire-fichier-orange.png" alt="gestionnaire de fichier" title="Gestionnaire de fichier">';
-    
-    $header .= '<img id="original-color-i" class="original-color" onclick="location.href=\'pages/register.php\'" src="assets/img/inscription.png" alt="inscription" title="Inscription">';
-    $header .= '<img id="hover-color-i" class="hover-color" onclick="location.href=\'pages/register.php\'" src="assets/img/inscription-orange.png" alt="inscription" title="Inscription">';
-    
-    $header .= '<img id="original-color-i" class="original-color" onclick="location.href=\'index.php\'" src="assets/img/accueil.png" alt="inscription" title="Inscription">';
-    $header .= '<img id="hover-color-i" class="hover-color" onclick="location.href=\'index.php\'" src="assets/img/accueil-orange.png" alt="inscription" title="Inscription">';
 
-    $header .= '<img id="original-color-c" class="original-color" onclick="location.href=\'pages/login.php\'" src="assets/img/connexion.png" alt="connexion" title="Connexion">';
-    $header .= '<img id="hover-color-c" class="hover-color" onclick="location.href=\'pages/login.php\'" src="assets/img/connexion-orange.png" alt="connexion" title="Connexion">';
+    $header .= '<a href="pages/file_manager.php" class="original-color"><img  src="assets/img/gestionnaire-fichier.png" alt="gestionnaire de fichier" title="Gestionnaire de fichier"></a>';
+    $header .= '<a href="pages/file_manager.php" class="hover-color"><img  src="assets/img/gestionnaire-fichier-orange.png" alt="gestionnaire de fichier" title="Gestionnaire de fichier"></a>';
     
-    $header .= '<img id="original-color-p" class="original-color" onclick="location.href=\'pages/profile.php\'" src="assets/img/profil.png" alt="profil" title="Profil">';
-    $header .= '<img id="hover-color-p" class="hover-color" onclick="location.href=\'pages/profile.php\'" src="assets/img/profil-orange.png" alt="profil" title="Profil">';
+    $header .= '<a href="pages/register.php" class="original-color"><img  src="assets/img/inscription.png" alt="gestionnaire de fichier" title="Gestionnaire de fichier"></a>';
+    $header .= '<a href="pages/register.php" class="hover-color"><img  src="assets/img/inscription-orange.png" alt="gestionnaire de fichier" title="Gestionnaire de fichier"></a>';
     
+    $header .= '<a href="index.php" class="original-color"><img  src="assets/img/accueil.png" alt="gestionnaire de fichier" title="Gestionnaire de fichier"></a>';
+    $header .= '<a href="index.php" class="hover-color"><img  src="assets/img/accueil-orange.png" alt="gestionnaire de fichier" title="Gestionnaire de fichier"></a>';
+    
+    $header .= '<a href="pages/login.php" class="original-color"><img  src="assets/img/connexion.png" alt="gestionnaire de fichier" title="Gestionnaire de fichier"></a>';
+    $header .= '<a href="pages/login.php" class="hover-color"><img  src="assets/img/connexion-orange.png" alt="gestionnaire de fichier" title="Gestionnaire de fichier"></a>';
+   
+    $header .= '<a href="pages/profile.php" class="original-color"><img  src="assets/img/profil.png" alt="gestionnaire de fichier" title="Gestionnaire de fichier"></a>';
+    $header .= '<a href="pages/profile.php" class="hover-color"><img  src="assets/img/profil-orange.png" alt="gestionnaire de fichier" title="Gestionnaire de fichier"></a>';
+
     $header .= '</div>';
-    $header .= '<script src="assets/js/main.js"></script>';
+    $header .= '<script src="assets/js/main.js"></script>'; 
     $header .= '</header>';
 
     return $header;

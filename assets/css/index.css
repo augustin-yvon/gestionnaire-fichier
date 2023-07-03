@@ -26,6 +26,8 @@
     background-color: #1B1929;
     transition: transform 0.5s;
     font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
 }
 
 .button:hover{

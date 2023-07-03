@@ -34,7 +34,7 @@ header{
     align-items: center;
 }
 
-.header-content img{
+.header-content a img{
     height: 7vh;
     cursor: pointer;
 }

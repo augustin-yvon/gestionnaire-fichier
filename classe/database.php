@@ -1,9 +1,9 @@
 <?php
 class Database {
-    private $host = "localhost";
-    private $dbname = "gestionnaire-fichier";
-    private $username = "root";
-    private $password = "";
+    private $host = "localhost:3306";
+    private $dbname = "augustin-yvon_file_manager";
+    private $username = "admin_manager";
+    private $password = "Admin_file1";
     public $pdo;
 
     public function __construct() {

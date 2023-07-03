@@ -20,7 +20,7 @@ form{
 
 input:focus {
     outline: none;
-}
+}   
 
 .input-box{
     display: flex;
@@ -71,4 +71,11 @@ form p{
 
 form a{
     color: white;
+}
+
+.error p{
+    font-size: 0.8rem;
+    max-width: 350px;
+    text-align: left;
+    margin-bottom: 3px;
 }
